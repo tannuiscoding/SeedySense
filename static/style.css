@@ -1,28 +1,113 @@
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    background-color: #f7f7f7;
 }
 
-header, footer {
-    background: #333;
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #d4edda !important;
+}
+
+/* Header */
+header {
+    background-image: url('../static/agriculture.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Form Styling */
+form label {
+    font-weight: bold;
+}
+
+form input, form button {
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Agricultural Theme Colors */
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.btn-success {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+.btn-success:hover {
+    background-color: #218838 !important;
+    border-color: #1e7e34 !important;
+}
+
+/* Styling for Buy Seeds Page */
+
+/* Page container */
+.buy-seeds-container {
+    background-image: url('../static/images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 50px;
     color: #fff;
-    padding: 10px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Title and description for Buy Seeds */
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-footer {
-    position: relative;
-    width: 100%;
-    bottom: 0;
+.page-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-#predictionResult {
-    background-color: #dff0d8;
-    color: #3c763d;
+/* Each seed website division */
+.seed-website {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: none;
+    margin: 20px 0;
+}
+
+.seed-website h2 {
+    font-size: 1.5rem;
+}
+
+.seed-website p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #0f3d0f;
+    color: #fff;
 }

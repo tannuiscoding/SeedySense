@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Contact Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Seedy Sense Logo" style="height: 40px; margin-right: 10px;">
+            Seedy Sense
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('buy_seeds') }}">Buy Seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('dont_contact_us') }}">Don't Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- Main Content -->
+    <div class="container text-center my-5 py-5">
+        <div class="content-box p-4 rounded bg-light">
+            <h1 class="text-success">Don't Contact Us</h1>
+            <p class="mt-4">
+                We kindly request that you refrain from contacting us unless it is absolutely necessary. 
+                Please, only reach out if there is an extreme emergency—like someone is seriously unwell 
+                or in dire need of help. We assure you, your understanding means a lot to us.
+            </p>
+            <p>
+                If some of our code doesn't work as expected, we humbly ask for your patience. 
+                Technology can be unpredictable at times, and we are constantly working to improve.
+            </p>
+            <p class="text-muted">Thank you for your cooperation!</p>
+            <hr class="my-4">
+            <h3 class="text-success">Connect With Us</h3>
+            <div class="social-links mt-3">
+                <a href="https://github.com/tannuiscoding" target="_blank" class="btn btn-outline-dark mx-2">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://twitter.com/tanniscoding" target="_blank" class="btn btn-outline-primary mx-2">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://linkedin.com/in/tchoudhary1611" target="_blank" class="btn btn-outline-info mx-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Seedy Sense. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

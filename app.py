@@ -1,23 +1,33 @@
 import warnings
-warnings.filterwarnings('ignore')  # Ignore all warnings
+warnings.filterwarnings('ignore')
 
-from flask import Flask, render_template, request, jsonify  # noqa: E402
-import joblib  # noqa: E402
-import pandas as pd  # noqa: E402
+from flask import Flask, render_template, request, jsonify, redirect, url_for
+import joblib
+import pandas as pd
 
 app = Flask(__name__)
 
-# Load the fitted scaler and model
 scaler = joblib.load('./model/scaler.pkl')
 seedy_model = joblib.load('./model/SeedySense.pkl')
 
 @app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/index')
 def index():
     return render_template('index.html')
 
+@app.route('/buy-seeds')
+def buy_seeds():
+    return render_template('buy-seeds.html')
+
+@app.route('/dont-contact-us')
+def dont_contact_us():
+    return render_template('dont-contact-us.html')
+
 @app.route('/predict', methods=['POST'])
 def predict_crop():
-    # Get form data
     N = float(request.form['N'])
     P = float(request.form['P'])
     K = float(request.form['K'])

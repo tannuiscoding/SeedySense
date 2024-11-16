@@ -8,9 +8,38 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Seedy Sense Logo" style="height: 40px; margin-right: 10px;">
+            Seedy Sense
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('buy_seeds') }}">Buy Seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('dont_contact_us') }}">Don't Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Header Section -->
     <header class="bg-dark text-white text-center py-3">
         <h1>Seedy Sense - Crop Predictor</h1>
     </header>
+
+    <!-- Form Section -->
     <div class="container mt-5">
         <form id="cropForm" class="mb-4">
             <div class="form-group">
@@ -48,9 +77,12 @@
             <p id="predictiontext"></p>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>&copy; 2023 Seedy Sense. All rights reserved.</p>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -66,7 +98,7 @@
             .then(data => {
                 const resultDiv = document.getElementById('predictionResult');
                 document.getElementById('predictiontext').innerText = 'The best crop for your soil is: ' + data.prediction;
-                resultDiv.style.display = 'block'; // Show the result div
+                resultDiv.style.display = 'block';
             })
             .catch(error => {
                 console.error('Error:', error);
