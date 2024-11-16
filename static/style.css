@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-header {
+header, footer {
     background: #333;
     color: #fff;
     padding: 10px 0;
@@ -13,11 +13,16 @@ header {
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+#predictionResult {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
 }
