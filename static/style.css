@@ -162,35 +162,7 @@ footer {
     background-color: #0f3d0f;
     color: #fff;
 }
-/* temporary card styling */
-/* .cardMain{
-   
 
-    height: auto;
-    width:auto;
-    border:solid;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 10px;
-    margin: 10px;
-    padding: 10px;
-    border-radius
-    : 10px;
-    transition: 0.3s;
-    border-radius: 5px;
-    align-items: center;
-    row-gap: 10px;
-    column-gap: 10px;
-
-}
-.card{
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    margin-left: 200px;
-    margin-top:10px;
-} */
 
 /* coder video bg  for index */
 .video-container {
