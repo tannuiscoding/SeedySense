@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+    <div class="video-container coder">
+        <video autoplay muted loop>
+          <source src="/static/farmgnvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
@@ -21,12 +27,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('home') }}">🏡Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('buy_seeds') }}">Buy Seeds</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="margin-left: 0px;">
                     <a class="nav-link" href="{{ url_for('dont_contact_us') }}">Don't Contact Us</a>
                 </li>
             </ul>
@@ -40,11 +46,11 @@
     </header>
 
     <!-- Form Section -->
-    <div class="container mt-5">
+    <div class="container mt-4">
         <form id="cropForm" class="mb-4">
             <div class="form-group">
                 <label for="N">Nitrogen (N):</label>
-                <input type="number" class="form-control" id="N" name="N" required>
+                <input type="number" class="form-control" id="N" name="N" size="50" required>
             </div>
             <div class="form-group">
                 <label for="P">Phosphorus (P):</label>

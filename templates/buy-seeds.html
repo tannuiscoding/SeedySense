@@ -9,7 +9,7 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top" >
     <div class="container">
         <a class="navbar-brand" href="{{ url_for('index') }}">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Seedy Sense Logo" style="height: 40px; margin-right: 10px;">
@@ -35,45 +35,52 @@
 </nav>
 
 
-    <!-- Page Content -->
-    <div class="buy-seeds-container">
-        <h1 class="page-title">Buy Seeds Online</h1>
-        <p class="page-description">Explore the best websites to purchase high-quality seeds for your farming needs.</p>
 
-        <div class="seed-website">
-            <h2>1. <a href="https://www.amazon.in" target="_blank">Amazon India</a></h2>
+    <!-- Page Content -->
+    <h1 class="page-title">Buy Seeds Online</h1>
+    <p class="page-description">Explore the best websites to purchase high-quality seeds for your farming needs.</p>
+    <div class="buy-seeds-container cardMain" style="background-image: url('../static/images/farmbg.jpg')">
+
+        <div class="seed-website card" >
+            <h2><a href="https://www.amazon.in" target="_blank">Amazon India</a></h2>
             <p>A trusted e-commerce platform offering a wide variety of seeds, including organic and hybrid varieties. Amazon's user reviews and ratings make it easier to choose the best options.</p>
         </div>
 
-        <div class="seed-website">
-            <h2>2. <a href="https://www.krishibazaar.com" target="_blank">Krishi Bazaar</a></h2>
+        <div class="seed-website card" >
+            <h2> <a href="https://www.krishibazaar.in" target="_blank">Krishi Bazaar</a></h2>
             <p>Krishi Bazaar specializes in agricultural products, offering high-quality seeds, fertilizers, and equipment for Indian farmers.</p>
         </div>
 
-        <div class="seed-website">
-            <h2>3. <a href="https://www.nationalseeds.in" target="_blank">National Seeds Corporation</a></h2>
+        <div class="seed-website    card" >
+            <h2> <a href="https://www.nationalseeds.in" target="_blank">National Seeds Corporation</a></h2>
             <p>Official government website providing certified seeds at reasonable prices, promoting sustainable and quality farming practices.</p>
         </div>
 
-        <div class="seed-website">
-            <h2>4. <a href="https://www.indiamart.com" target="_blank">IndiaMart</a></h2>
+        <div class="seed-website card" >
+            <h2> <a href="https://www.indiamart.com" target="_blank">IndiaMart</a></h2>
             <p>IndiaMart connects farmers to reliable seed suppliers across the country, offering bulk orders and customizable options.</p>
         </div>
 
-        <div class="seed-website">
-            <h2>5. <a href="https://www.ugaoo.com" target="_blank">Ugaoo</a></h2>
+        <div class="seed-website    card" >
+            <h2> <a href="https://www.ugaoo.com" target="_blank">Ugaoo</a></h2>
             <p>Known for its premium quality gardening seeds and tools, Ugaoo is a great platform for home gardeners and small-scale farmers.</p>
         </div>
 
-        <div class="seed-website">
-            <h2>6. <a href="https://www.seedsofindia.com" target="_blank">Seeds of India</a></h2>
+        <div class="seed-website card" >
+            <h2> <a href="https://www.seedsofindia.com" target="_blank">Seeds of India</a></h2>
             <p>This website offers a unique collection of Indian vegetable, herb, and flower seeds to promote biodiversity and traditional farming.</p>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer indexFooter" >
         <p>&copy; 2024 Seedy Sense. All rights reserved.</p>
     </footer>
+
+
+   
+
+    
+   
 </body>
 </html>
