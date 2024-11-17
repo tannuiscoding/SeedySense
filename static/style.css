@@ -1,4 +1,9 @@
 /* General Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
@@ -35,10 +40,13 @@ header {
 /* Form Styling */
 form label {
     font-weight: bold;
+    color: white;
+    font-weight: bolder;
 }
 
 form input, form button {
     border-radius: 5px;
+    size:10;
 }
 
 /* Footer */
@@ -69,9 +77,23 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding: 50px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000;
+    background-color: #1fac8956;
+    height: auto;
+    width:auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    
+    border-radius: 80px;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    font-weight: bold;
+    padding: 100px;
+    margin: 50px;
+
+    /* position:relative; */
 }
 
 /* Title and description for Buy Seeds */
@@ -79,29 +101,58 @@ footer {
     font-size: 3rem;
     margin-bottom: 10px;
     text-align: center;
+    color: #28a745;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .page-description {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Each seed website division */
 .seed-website {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
+    width: 400px;
+    height: 400px;
+    padding: 20px ;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left:90px;
+
+    /* position:relative; */
 }
 
 .seed-website h2 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.seed-website h2 a{
+    color: #28a745;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .seed-website p {
     font-size: 1rem;
-    line-height: 1.5;
+    align-items: center;
+    line-height: 2;
+    margin-top: 50px;
+    color: #28a745;
+
 }
 
 /* Footer */
@@ -111,3 +162,53 @@ footer {
     background-color: #0f3d0f;
     color: #fff;
 }
+/* temporary card styling */
+/* .cardMain{
+   
+
+    height: auto;
+    width:auto;
+    border:solid;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius
+    : 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+.card{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    margin-top:10px;
+} */
+
+/* coder video bg  for index */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
