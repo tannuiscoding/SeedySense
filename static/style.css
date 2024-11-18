@@ -1,186 +1,642 @@
-/* General Styling */
-*{
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --text-color: #2c3e50;
+    --light-text: #7f8c8d;
+    --background-color: #f5f6fa;
+    --card-background: #ffffff;
+    --border-color: #e1e8ed;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --error-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f1c40f;
+    --info-color: #3498db;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-/* Navbar Styling */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Header Styles */
+header {
+    background-color: var(--card-background);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar-brand {
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: var(--primary-color);
     font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .nav-link {
-    color: white !important;
-    margin: 0 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #d4edda !important;
+    color: var(--primary-color);
 }
 
-/* Header */
-header {
-    background-image: url('../static/agriculture.jpg');
-    background-size: cover;
-    background-position: center;
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Container and Card Styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Form Styling */
-form label {
-    font-weight: bold;
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Prediction Form Styles */
+.prediction-form {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.unit {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* Prediction Result Styles */
+.prediction-result {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    font-weight: bolder;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
 }
 
-form input, form button {
-    border-radius: 5px;
-    size:10;
+.prediction-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
 }
 
-/* Footer */
-footer {
+.input-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.parameter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+.parameter span {
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+/* Info Box Styles */
+.info-box {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.info-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.info-box li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: var(--text-color);
     font-size: 0.9rem;
 }
 
-/* Agricultural Theme Colors */
-.bg-success {
-    background-color: #28a745 !important;
-}
-
-.btn-success {
-    background-color: #28a745 !important;
-    border-color: #28a745 !important;
-}
-
-.btn-success:hover {
-    background-color: #218838 !important;
-    border-color: #1e7e34 !important;
-}
-
-/* Styling for Buy Seeds Page */
-
-/* Page container */
-.buy-seeds-container {
-    background-image: url('../static/images/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #1fac8956;
-    height: auto;
-    width:auto;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 10px;
-    
-    border-radius: 80px;
-    align-items: center;
-    row-gap: 10px;
-    column-gap: 10px;
+.info-box li:before {
+    content: "•";
+    color: var(--primary-color);
     font-weight: bold;
-    padding: 100px;
-    margin: 50px;
-
-    /* position:relative; */
 }
 
-/* Title and description for Buy Seeds */
-.page-title {
-    font-size: 3rem;
-    margin-bottom: 10px;
+/* Team Page Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.team-member {
+    background: var(--card-background);
+    border-radius: 12px;
+    padding: 2rem;
     text-align: center;
-    color: #28a745;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.page-description {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-color);
 }
 
-/* Each seed website division */
-.seed-website {
-    width: 400px;
-    height: 400px;
-    padding: 20px ;
-    align-items: center;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.7);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 60px;
-    row-gap: 10px;
-    column-gap: 10px;
-    margin-left:90px;
-
-    /* position:relative; */
-}
-
-.seed-website h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-.seed-website h2 a{
-    color: #28a745;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-.seed-website p {
-    font-size: 1rem;
-    align-items: center;
-    line-height: 2;
-    margin-top: 50px;
-    color: #28a745;
-
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #0f3d0f;
-    color: #fff;
-}
-
-
-/* coder video bg  for index */
-.video-container {
-    position: fixed;
+.team-member::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-  }
-  
-  .video-container video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.member-photo i {
+    font-size: 3rem;
+    color: white;
+}
+
+.team-member h3 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    color: var(--light-text);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+}
+
+.team-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Contact Page Styles */
+.contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.contact-form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.contact-form .form-control {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-  }
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: var(--card-background);
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+    outline: none;
+}
+
+.contact-form textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.contact-info {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.contact-info h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(39, 174, 96, 0.1));
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.info-item p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    background: var(--secondary-color);
+}
+
+/* Buy Seeds Page Styles */
+.buy-seeds-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.seed-website {
+    background: var(--card-background);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.seed-website::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.seed-website:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.seed-website h2 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.seed-website h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.seed-website h2 a:hover {
+    color: var(--primary-color);
+}
+
+.seed-website p {
+    color: var(--light-text);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.seed-website .website-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.seed-website .website-link:hover {
+    color: var(--secondary-color);
+}
+
+.seed-website .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.seed-website .rating i {
+    color: #f1c40f;
+}
+
+.seed-website .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.seed-website .tag {
+    background: rgba(46, 204, 113, 0.1);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Error and Success Messages */
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.alert-error {
+    background-color: #fde8e8;
+    border: 1px solid var(--error-color);
+    color: var(--error-color);
+}
+
+.alert-success {
+    background-color: #e8f8f0;
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.text-light {
+    color: var(--light-text);
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .input-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box ul {
+        grid-template-columns: 1fr;
+    }
+}

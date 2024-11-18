@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedySense - User Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><i class="bi bi-flower1"></i> SeedySense</h1>
+            <nav>
+                <a href="/" class="nav-link"><i class="bi bi-house"></i> Home</a>
+                <a href="/predict" class="nav-link"><i class="bi bi-graph-up"></i> Predict</a>
+                <a href="/guide" class="nav-link active"><i class="bi bi-book"></i> Guide</a>
+                <a href="/buy-seeds" class="nav-link"><i class="bi bi-bag"></i> Buy Seeds</a>
+                <a href="/contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card fade-in">
+            <h2><i class="bi bi-book"></i> User Guide</h2>
+            <p class="text-light">Learn how to use SeedySense effectively for the best results.</p>
+
+            <div class="guide-section">
+                <h3><i class="bi bi-1-circle"></i> Gathering Soil Data</h3>
+                <p>To get accurate predictions, you'll need to provide the following soil and environmental data:</p>
+                <ul>
+                    <li><strong>Nitrogen (N):</strong> 0-140 kg/ha</li>
+                    <li><strong>Phosphorus (P):</strong> 0-140 kg/ha</li>
+                    <li><strong>Potassium (K):</strong> 0-200 kg/ha</li>
+                    <li><strong>Temperature:</strong> 0-50°C</li>
+                    <li><strong>Humidity:</strong> 0-100%</li>
+                    <li><strong>pH Level:</strong> 0-14</li>
+                    <li><strong>Rainfall:</strong> 0-300 mm</li>
+                </ul>
+            </div>
+
+            <div class="guide-section">
+                <h3><i class="bi bi-2-circle"></i> Making Predictions</h3>
+                <ol>
+                    <li>Navigate to the <a href="/predict">Prediction</a> page</li>
+                    <li>Enter your soil and environmental data</li>
+                    <li>Click "Predict Crop" to get recommendations</li>
+                    <li>Review the suggested crop and its suitability</li>
+                </ol>
+            </div>
+
+            <div class="guide-section">
+                <h3><i class="bi bi-3-circle"></i> Understanding Results</h3>
+                <p>The prediction result shows the most suitable crop based on your input parameters. Consider these factors:</p>
+                <ul>
+                    <li>Seasonal variations may affect crop suitability</li>
+                    <li>Local climate patterns should be considered</li>
+                    <li>Results are based on historical agricultural data</li>
+                </ul>
+            </div>
+
+            <div class="guide-section">
+                <h3><i class="bi bi-question-circle"></i> Need Help?</h3>
+                <p>If you need assistance or have questions:</p>
+                <ul>
+                    <li>Check our <a href="/faq">FAQ section</a></li>
+                    <li>Contact our support team</li>
+                    <li>Review the parameter ranges above</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

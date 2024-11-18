@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SeedySense</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedySense - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
 
-    .video-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1;
-    }
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+        }
 
-    .video-container video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: translate(-50%, -50%);
-    }
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-    .content {
-      position: relative;
-      z-index: 1;
-      color: white;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
+        .content h1 {
+            font-size: 4rem;
+            margin-top: 20%;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
 
-    .content h1 {
-      font-size: 4rem;
-      margin-top: 20%;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    }
+        .content p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
 
-    .content p {
-      font-size: 1.2rem;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    }
+        .content a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            transition: background 0.3s ease;
+        }
 
-    .content a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #ff6f61;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-      transition: background 0.3s ease;
-    }
-
-    .content a:hover {
-      background: #ff483a;
-    }
-  </style>
+        .content a:hover {
+            background: #ff483a;
+        }
+    </style>
 </head>
 <body>
-  <div class="video-container">
-    <video autoplay muted loop>
-      <source src="/static/3173440-uhd_3840_2160_30fps.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div class="content">
-    <h1>Suitable Seed for your Soil</h1>
-    <p>Experience the power of AI. Get the best for you.</p>
-    <a href="/index">Get Started</a>
-  </div>
+    <header>
+        <div class="header-content">
+            <h1><i class="bi bi-flower1"></i> SeedySense</h1>
+            <nav>
+                <a href="/" class="nav-link active"><i class="bi bi-house"></i> Home</a>
+                <a href="/predict" class="nav-link"><i class="bi bi-graph-up"></i> Predict</a>
+                <a href="/guide" class="nav-link"><i class="bi bi-book"></i> Guide</a>
+                <a href="/buy-seeds" class="nav-link"><i class="bi bi-bag"></i> Buy Seeds</a>
+                <a href="/contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="/static/3173440-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <h1 style="display: flex; justify-content: center;">Suitable Seed for your Soil</h1>
+        <p>Experience the power of AI. Get the best for you.</p>
+        <a href="/predict">Get Started</a>
+    </div>
 </body>
 </html>

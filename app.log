@@ -1,0 +1,106 @@
+2024-11-18 19:15:53,349 - app - INFO - ML models loaded successfully
+2024-11-18 19:15:53,362 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-11-18 19:15:56,140 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:15:56] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:15:56,208 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:15:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:15:59,149 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:15:59] "GET / HTTP/1.1" 200 -
+2024-11-18 19:15:59,296 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:15:59] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:15:59,311 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:15:59] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:00,480 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:00] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:16:00,520 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:01,709 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:01] "GET / HTTP/1.1" 200 -
+2024-11-18 19:16:01,854 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:01] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:04,128 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:04] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:16:04,171 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:05,305 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:05] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:16:05,340 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:06,924 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:06] "GET /contact HTTP/1.1" 200 -
+2024-11-18 19:16:06,972 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:08,907 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:08] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:16:08,959 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:10,625 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:10] "GET / HTTP/1.1" 200 -
+2024-11-18 19:16:10,785 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:10] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:10,794 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:10] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:15,620 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:15] "GET / HTTP/1.1" 200 -
+2024-11-18 19:16:15,833 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:15] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:17,492 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:17] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:16:17,538 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:24,675 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:24] "GET / HTTP/1.1" 200 -
+2024-11-18 19:16:24,816 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:24] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:24,828 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:24] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:16:26,421 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:26] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:16:26,472 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:27,545 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:27] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:16:27,587 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:16:35,125 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:35] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:16:35,172 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:16:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:17:36,756 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:36] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:17:36,801 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:17:38,365 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:38] "GET / HTTP/1.1" 200 -
+2024-11-18 19:17:38,529 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:38] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:17:39,899 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:39] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:17:40,087 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:17:52,155 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:52] "GET / HTTP/1.1" 200 -
+2024-11-18 19:17:52,309 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:52] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:17:52,316 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:52] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:17:53,458 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:53] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:17:53,513 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:17:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:18:58,017 - app - INFO - ML models loaded successfully
+2024-11-18 19:18:58,029 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-11-18 19:18:58,204 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:18:58] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:18:58,485 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:18:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:19:01,535 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:01] "GET / HTTP/1.1" 200 -
+2024-11-18 19:19:01,687 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:01] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:19:04,290 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:04] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:19:04,323 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:19:28,204 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:28] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:19:28,233 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:19:30,350 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:30] "GET / HTTP/1.1" 200 -
+2024-11-18 19:19:30,512 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:30] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:19:30,544 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:30] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:19:31,591 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:31] "[33mGET /index HTTP/1.1[0m" 404 -
+2024-11-18 19:19:31,635 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:19:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:19:39,903 - app - INFO - ML models loaded successfully
+2024-11-18 19:19:39,918 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-11-18 19:20:14,489 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:14] "GET / HTTP/1.1" 200 -
+2024-11-18 19:20:15,314 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:15] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:20:19,369 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:19] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:20:19,421 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:20:22,928 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:22] "GET /team HTTP/1.1" 200 -
+2024-11-18 19:20:22,971 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:20:24,580 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:24] "GET / HTTP/1.1" 200 -
+2024-11-18 19:20:24,786 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:24] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:20:24,834 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:24] "[35m[1mGET /static/3173440-uhd_3840_2160_30fps.mp4 HTTP/1.1[0m" 206 -
+2024-11-18 19:20:26,430 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:26] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:20:26,478 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:20:27,642 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:27] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:20:27,676 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:20:28,884 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:28] "GET /guide HTTP/1.1" 200 -
+2024-11-18 19:20:28,932 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:20:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:42,192 - app - INFO - ML models loaded successfully
+2024-11-18 19:21:42,203 - werkzeug - INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-11-18 19:21:43,211 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:43] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:21:43,299 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:44,568 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:44] "GET / HTTP/1.1" 200 -
+2024-11-18 19:21:44,613 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:46,091 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:46] "GET / HTTP/1.1" 200 -
+2024-11-18 19:21:46,126 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:47,601 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:47] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:21:47,648 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:49,620 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:49] "GET /guide HTTP/1.1" 200 -
+2024-11-18 19:21:49,663 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:51,415 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:51] "GET /team HTTP/1.1" 200 -
+2024-11-18 19:21:51,491 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:52,369 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:52] "GET /guide HTTP/1.1" 200 -
+2024-11-18 19:21:52,415 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:53,332 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:53] "GET /contact HTTP/1.1" 200 -
+2024-11-18 19:21:53,374 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:54,857 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:54] "GET / HTTP/1.1" 200 -
+2024-11-18 19:21:55,049 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:21:56,149 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:56] "GET /predict HTTP/1.1" 200 -
+2024-11-18 19:21:56,188 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:21:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:23:07,936 - app - INFO - Successful prediction: kidneybeans for input: {'N': '2', 'P': '3', 'K': '3', 'temperature': '22', 'humidity': '1', 'ph': '1', 'rainfall': '11'}
+2024-11-18 19:23:07,936 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:23:07] "POST /predict_result HTTP/1.1" 200 -
+2024-11-18 19:23:18,596 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:23:18] "GET /guide HTTP/1.1" 200 -
+2024-11-18 19:23:18,672 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:23:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-11-18 19:23:23,958 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:23:23] "GET / HTTP/1.1" 200 -
+2024-11-18 19:23:24,004 - werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 19:23:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
