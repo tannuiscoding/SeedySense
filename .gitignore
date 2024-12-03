@@ -1,2 +1,4 @@
 ./seedy/
 env/
+# Local Netlify folder
+.netlify
